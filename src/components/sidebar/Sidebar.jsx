@@ -11,12 +11,15 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone"
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications"
+import { Link } from "react-router-dom"
 
 const Sidebar = function () {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">Blood4All</span>
+                <Link to="/" style={{textDecoration: "none"}}>
+                    <span className="logo">Blood4All</span>
+                </Link>
             </div>
 
             <hr/>
@@ -30,15 +33,19 @@ const Sidebar = function () {
                     </li>
 
                     <p className="title">LISTS</p>
-                    <li>
-                        <PersonOutlineIcon className="icon"/>
-                        <span>Utilisateurs</span>
-                    </li>
+                        <Link to = "/users" style={{textDecoration: "none"}}>
+                            <li>
+                                <PersonOutlineIcon className="icon"/>
+                                <span>Utilisateurs</span>
+                            </li>
+                        </Link>
 
-                    <li>
-                        <StoreIcon className="icon"/>
-                        <span>Sangs</span>
-                    </li>
+                    <Link to = "/bloods" style={{textDecoration: "none"}}>
+                        <li>
+                            <StoreIcon className="icon"/>
+                            <span>Sangs</span>
+                        </li>
+                    </Link>
 
                     <li>
                         <CreditCardIcon className="icon"/>

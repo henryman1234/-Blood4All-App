@@ -1,0 +1,84 @@
+.single {
+    display: flex;
+    width: 100%;
+}
+
+.singleContainer {
+    flex: 6;
+}
+
+.singleContainer .topSingle {
+    display: flex;
+    padding: 20px ;
+    gap: 20px;
+}
+
+.singleContainer .topSingle .leftSingle {
+    flex: 1;
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    padding: 20px;
+    position: relative;
+}
+
+.editButton {
+    position: absolute;
+    top: 0;
+    color: #7451f8;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    background-color: #7551f818;
+    border-radius: 0px 0px 0px 5px;
+    right: 0;
+}
+
+.singleContainer .topSingle .itemTitle {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.singleContainer .topSingle .leftSingle .item {
+    display: flex;
+    gap: 20px;
+}
+
+.singleContainer .topSingle .leftSingle .item .itemImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.singleContainer .detailItem {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.singleContainer .detailItem .itemKey {
+    font-weight: bold;
+    color: gray;
+}
+
+.singleContainer .detailItem .itemValue {
+    color: gray;
+    margin-right: 10px;
+}
+
+.singleContainer .topSingle .rightSingle {
+    flex: 2;
+}
+
+/* title */
+.title2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: lightgray;
+    font-weight: 500;
+}
+
+.singleContainer .bottomSingle {
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+    padding: 20px;
+    margin: 10px 20px ;
+
+}

@@ -20,11 +20,11 @@ const data = [
   ];
 
 
-const Chart = function () {
+const Chart = function ({aspect, title}) {
     return (
         <div className="chart">
-            <div className="title">Derniers 6 mois</div>
-            <ResponsiveContainer width="100%"  aspect={2/1}>
+            <div className="title">{title}</div>
+            <ResponsiveContainer width="100%"  aspect={aspect}>
             <AreaChart
             width={730}
             height={250}

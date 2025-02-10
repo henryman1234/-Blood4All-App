@@ -2,6 +2,7 @@ import Chart from "../../components/charts/Chart"
 import Featured from "../../components/featured/Featured"
 import Navbar from "../../components/navbar/Navbar"
 import Sidebar from "../../components/sidebar/Sidebar"
+import Table from "../../components/table/Table"
 import Widget from "../../components/widget/Widget"
 import "./home.css"
 
@@ -19,11 +20,12 @@ const Home = function () {
                </div>
                <div className="charts">
                 <Featured/>
-                <Chart/>
+                <Chart title="Derniers 6 mois" aspect={2/1}/>
                </div>
                <div className="listContainers">
                 <div className="listTitle">
                     Dernièrs Achats de sangs
+                    <Table/>
                 </div>
                </div>
             </div>
