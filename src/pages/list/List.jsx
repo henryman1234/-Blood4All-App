@@ -1,6 +1,6 @@
-import Sidebar from "../../Components/sidebar/Sidebar"
+import Sidebar from "../../components/sidebar/Sidebar"
 import "./list.css"
-import Navbar from "../../Components/navbar/Navbar"
+import Navbar from "../../components/navbar/Navbar"
 import React from "react"
 import Datatable from "../../components/datatable/Datatable"
 
